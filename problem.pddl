@@ -1,1 +1,12 @@
-
+(define (problem microbot-tumor-problem)
+  (:domain microbot-tumor)
+  (:objects tissue1 tissue2 microbot1 tumor1)
+  (:init (tissue tissue1)
+         (tissue tissue2)
+         (microbot microbot1)
+         (tumor tumor1)
+         (at microbot1 tissue1)
+         (at tumor1 tissue1)
+         (free microbot1))
+  (:goal (and (at tumor1 tissue2)
+              (not (at tumor1 tissue1)))))

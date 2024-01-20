@@ -1,5 +1,3 @@
-Domain File:
-
 (define (domain microbot-tumor)
   (:predicates (tissue ?t) (microbot ?m) (tumor ?tumor) (at ?obj ?t)
                (free ?m) (carry ?obj ?m))
